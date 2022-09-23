@@ -31,7 +31,7 @@ def navigate_dir():
     main_path = pathlib.Path(__file__).parent.resolve()
     os.chdir(main_path)
     MainFolders = glob.glob('*/')
-    myfile = open('Summary of All.csv', 'w', newline='')
+    myfile = open('Summary of All RS Outputs.csv', 'w', newline='')
     wr = csv.writer(myfile)#, quoting=csv.QUOTE_ALL)
     for i in MainFolders:
         myfile.write(str(i))
